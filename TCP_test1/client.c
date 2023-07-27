@@ -20,7 +20,7 @@ int main(void)
     char buf[BUFSIZ];
 
     serv_addr.sin_family = AF_INET;
-    serv_addr.sin_port = htons(9527);           //要求与服务器端一致
+    serv_addr.sin_port = htons(9527);           //要求与服务器端口号一致
     inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr.s_addr);
 
     cfd = socket(AF_INET, SOCK_STREAM, 0);
